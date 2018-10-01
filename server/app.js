@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const multipartMiddleware = multipart();
 
 // API Configurations for KAIROS
-let kairos_client = new Kairos(process.env.KAIROS_App_ID, process.env.KAIROS_KEY);
+let kairos_client = new Kairos(process.env.KAIROS_APP_ID, process.env.KAIROS_KEY);
 
 app.get('/', (req, res) => {
     res.send('Server started … ')
