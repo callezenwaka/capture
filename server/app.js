@@ -19,7 +19,6 @@ const multipartMiddleware = multipart();
 let kairos_client = new Kairos(process.env.KAIROS_App_ID, process.env.KAIROS_KEY);
 
 app.get('/', (req, res) => {
-    console.log('Server started … ');
     res.send('Server started … ')
 });
 
